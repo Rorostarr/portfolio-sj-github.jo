@@ -1,29 +1,76 @@
-
-/* Commentaire du code ignoré avec slash etoile */
-
-
-
-/* Sélecteur d'élément */
-h1 {
-    color: red;  /* mettre le niveau de titre 1 en rouge*/
-    font-size: 60px;
-    text-align: center;
-  
+/* Reset de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Sélecteur de classe */
-.important {
-    font-weight: bold;  /*met en gras*/
-}
-
-/* Sélecteur d'ID */
-#citation {
+/* Style global de la page */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f2f2;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
     padding: 20px;
-    color: grey;
+    background-image: linear-gradient(135deg, #f9d9e0, #f4b6c2);
 }
 
-
-p {
-    background-color: #FBF8F6;
-
+/* Container principal */
+.container {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+    position: relative;
 }
+
+/* Titres principaux */
+h1 {
+    color: #f59b8a;
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: #f4a6c4;
+    margin-bottom: 40px;
+    font-weight: 400;
+}
+
+/* Section générale */
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 28px;
+    color: #f59b8a;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Liste des voyages avec icônes et drapeaux */
+ul {
+    list-style-type: none;
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+ul li {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.flag {
+    width: 25px;
+    height: 
