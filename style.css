@@ -99,3 +99,92 @@ ul li {
 .flag {
     width: 25px;
     height: 
+/* Styles pour le bouton */
+.view-more {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.view-more .btn {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.view-more .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Effet Livre */
+.hidden {
+    display: none;
+}
+
+#book-animation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+}
+
+.book {
+    width: 300px;
+    height: 400px;
+    perspective: 1000px;
+}
+
+.cover {
+    width: 100%;
+    height: 100%;
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-radius: 5px;
+    transform-origin: left;
+    transition: transform 1s;
+}
+
+.pages {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+
+.page {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transform-origin: left;
+    transition: transform 1s;
+}
+
+#page-1 {
+    transform: rotateY(0deg);
+}
+
+#page-2 {
+    transform: rotateY(-90deg);
+}
+
+#page-3 {
+    transform: rotateY(-180deg);
+}
