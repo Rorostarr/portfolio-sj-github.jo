@@ -70,6 +70,31 @@ ul li {
     margin-bottom: 10px;
     line-height: 1.6;
 }
+/* Galerie photo */
+.photo-gallery {
+    display: flex;
+    justify-content: space-between; /* Espace uniforme entre les photos */
+    gap: 20px; /* Espace entre les photos */
+    flex-wrap: wrap; /* Permet de passer à la ligne si nécessaire */
+}
+
+.photo {
+    text-align: center; /* Centre le texte sous chaque photo */
+    width: 200px; /* Conserve la taille de la photo */
+    margin: 0 auto; /* Centre chaque photo dans son espace */
+}
+
+.photo img {
+    width: 200px; /* Conserve la largeur spécifiée dans le HTML */
+    height: auto; /* Maintient le ratio d’aspect */
+    border-radius: 8px; /* Bords arrondis pour un effet esthétique */
+}
+
+.photo p {
+    margin-top: 8px; /* Espace entre la photo et la description */
+    font-size: 0.9em; /* Taille de texte ajustée */
+    color: #555; /* Texte légèrement grisé */
+}
 
 .flag {
     width: 25px;
